@@ -1,19 +1,6 @@
-// import 'package:my_store_app/model/product/rate.dart';
 import 'dart:convert';
 
-class Rating {
-  double rate;
-  int count;
-
-  Rating({required this.rate, required this.count});
-
-  factory Rating.fromJson(Map<String, dynamic> json) {
-    return Rating(
-      rate: (json['rate'] as num).toDouble(),
-      count: json['count'],
-    );
-  }
-}
+import 'package:my_store_app/model/product/rating.dart';
 
 class Product {
   int id;
