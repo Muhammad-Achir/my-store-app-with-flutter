@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:my_store_app/model/product/rating.dart';
+import 'package:my_store_app/models/product/rating.dart';
 
 class Product {
   int id;

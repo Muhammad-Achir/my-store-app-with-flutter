@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_store_app/model/product/product.dart';
+import 'package:my_store_app/models/product/product.dart';
 
 class DetailProductItem extends StatefulWidget {
   final int quantity;

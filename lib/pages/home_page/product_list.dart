@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:my_store_app/model/product/product.dart';
-import 'package:my_store_app/page/product_page/detail_product_page.dart';
+import 'package:my_store_app/models/product/product.dart';
+import 'package:my_store_app/pages/product_page/detail_product_page.dart';
 
-class HomePage extends StatelessWidget {
+class ProductList extends StatelessWidget {
   final int gridCount;
-  const HomePage({super.key, required this.gridCount});
+  const ProductList({super.key, required this.gridCount});
 
   @override
   Widget build(BuildContext context) {

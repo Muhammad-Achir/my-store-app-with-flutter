@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_store_app/page/home_page/home_page.dart';
+import 'package:my_store_app/pages/home_page/product_list.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+class ProductPage extends StatelessWidget {
+  const ProductPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +12,11 @@ class MainScreen extends StatelessWidget {
       ),
       body: LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
         if (constraints.maxWidth <= 800) {
-          return HomePage(gridCount: 2);
+          return ProductList(gridCount: 2);
         } else if (constraints.maxWidth <= 1200) {
-          return HomePage(gridCount: 4);
+          return ProductList(gridCount: 4);
         } else {
-          return HomePage(gridCount: 6);          
+          return ProductList(gridCount: 6);          
         }
       }),
     );
